@@ -15,20 +15,24 @@
 	})();
 	</script>
   
-  <title>响应式布局meta.md | 诗-雨</title>
+  <title>html标签 | 诗-雨</title>
   <meta name="author" content="杨桂生">
   
-  <meta name="description" content="响应式布局Meat标签meta提供关于HTML文档的元数据。元数据不会显示在页面上，但是对于机器是可读的。它可用于浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他web服务。
-申明编码
-&amp;lt;meta charset=&amp;quot;utf-8&amp;quot;/&amp;gt;
+  <meta name="description" content="html5标签结构标签
+header：定义头部标签，双标签，块级标签
 
+nav：定义导航部分标签，双标签，块级标签
 
-优先使用IE最">
+section：定义一个有关联的有语义的DIV，双标签，块级标签
+
+article：定义多个有关联的盒子，一般用做内容主体，双标签，块级标签
+
+aside：定义侧边栏，双标签，块级标">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="响应式布局meta.md"/>
+  <meta property="og:title" content="html标签"/>
   <meta property="og:site_name" content="诗-雨"/>
 
   
@@ -86,66 +90,152 @@
   <div class="post-content">
     <header class="article-info clearfix">
   <h1 itemprop="name">
-	响应式布局meta.md
+	html标签
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="杨桂生">杨桂生</a>
     </p>
   <p class="article-time">
-    <time datetime="2016-06-24T07:54:26.000Z" itemprop="datePublished">2016-06-24</time>
-    更新日期:<time datetime="2016-06-24T11:34:20.000Z" itemprop="dateModified">2016-06-24</time>
+    <time datetime="2016-06-27T09:36:47.000Z" itemprop="datePublished">2016-06-27</time>
+    更新日期:<time datetime="2016-06-27T14:05:54.000Z" itemprop="dateModified">2016-06-27</time>
     
   </p>
 </header>
     <div class="entry">
 		
-        <h2 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h2><h3 id="Meat标签"><a href="#Meat标签" class="headerlink" title="Meat标签"></a>Meat标签</h3><pre><code>meta提供关于HTML文档的元数据。元数据不会显示在页面上，但是对于机器是可读的。它可用于浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他web服务。
-申明编码
-&lt;meta charset=&quot;utf-8&quot;/&gt;
+        <h1 id="html5标签"><a href="#html5标签" class="headerlink" title="html5标签"></a>html5标签</h1><h2 id="结构标签"><a href="#结构标签" class="headerlink" title="结构标签"></a>结构标签</h2><ol>
+<li><p>header：<br>定义头部标签，双标签，块级标签</p>
+</li>
+<li><p>nav：<br>定义导航部分标签，双标签，块级标签</p>
+</li>
+<li><p>section：<br>定义一个有关联的有语义的DIV，双标签，块级标签</p>
+</li>
+<li><p>article：<br>定义多个有关联的盒子，一般用做内容主体，双标签，块级标签</p>
+</li>
+<li><p>aside：<br>定义侧边栏，双标签，块级标签</p>
+</li>
+<li><p>hgroup：<br>定义标题群组，双标签，块级标签</p>
+</li>
+</ol>
+<h2 id="语义标签"><a href="#语义标签" class="headerlink" title="语义标签"></a>语义标签</h2><h4 id="form-input标签"><a href="#form-input标签" class="headerlink" title="form-input标签"></a>form-input标签</h4><ul>
+<li>tel：用于输入电话号码</li>
+<li>search：用于提示用户输入要搜索的文字，和text之间的区别主要在于样式上</li>
+<li>URL：用于输入单个网址</li>
+<li>email:邮箱，如果指定了multiple属性，就可以输入多个电子邮件，以逗号分隔</li>
+<li>datetime:输入时区utc的时间</li>
+<li>date：用于输入不含时区的日期</li>
+<li>month：用于输入年份和月份但不含时区的日期</li>
+<li>week:用于输入含年份和周数但不含时区的日期；例如，此格式的日期2011-w05表示2011年的第五周。</li>
+<li>time:用于输入含小时，分钟，秒的小数但不含时区的时间值</li>
+<li>datetime-local：用于输入不含时区的日期和时间</li>
+<li>number:用户输入数字</li>
+<li>range:用于输入数字，与number的区别是无需具体数字</li>
+<li>color：用于通过颜色池控件选择颜色</li>
+</ul>
+<p>样式：</p>
+<pre><code>autocomplete:搜索记录
 
+required：基本验证
 
-优先使用IE最新版本和Chrome
-    &lt;meta http-equiv=&quot;X-UA-Cpmpatible&quot; content=&quot;IE=edge,chrome=1&quot;/&gt;
-</code></pre><h4 id="浏览器内核控制"><a href="#浏览器内核控制" class="headerlink" title="浏览器内核控制"></a>浏览器内核控制</h4><pre><code>国内浏览器很多都是双内核（webkit 和Trident）,
+pattren:更为强大和专业的验证
 
-webkit内核高速浏览，IE内核兼容网页和旧版网站。
+placeholder:占位提示
 
-而添加meta标签的网站可用控制浏览器选择何种内核渲染。
+autofocus:自动聚焦
 
-&lt;meta name=&quot;renderer&quot; content=&quot;webkit|ie-comp|ie-stand&quot;&gt;
-</code></pre><h4 id="国内双核浏览器默认内核模式如下："><a href="#国内双核浏览器默认内核模式如下：" class="headerlink" title="国内双核浏览器默认内核模式如下："></a>国内双核浏览器默认内核模式如下：</h4><pre><code>1.搜狗高速浏览器、QQ浏览器：IE内核（兼容模式）
+form
+</code></pre><h4 id="音视频"><a href="#音视频" class="headerlink" title="音视频"></a>音视频</h4><h5 id="audio标签样式"><a href="#audio标签样式" class="headerlink" title="audio标签样式"></a>audio标签样式</h5><pre><code>定义音乐标签，双标签，块级标签
+</code></pre><p>样式：</p>
+<pre><code>autoplay:自动播放
 
-2.360极速浏览器、遨游浏览器：Webkit内核（极速模式）
-</code></pre><h4 id="页面关键字"><a href="#页面关键字" class="headerlink" title="页面关键字"></a>页面关键字</h4><pre><code>&lt;meta name=&quot;keywords&quot; content=&quot;your tags,&quot;/&gt;
-</code></pre><h4 id="页面描述"><a href="#页面描述" class="headerlink" title="页面描述"></a>页面描述</h4><pre><code>&lt;meta name=&quot;description&quot; content=&quot;120| 150 words&quot;/&gt;
-</code></pre><h4 id="搜索引擎索引方式"><a href="#搜索引擎索引方式" class="headerlink" title="搜索引擎索引方式"></a>搜索引擎索引方式</h4><pre><code>&lt;meata name=&quot;robots&quot; content=&quot;index,follow&quot;/&gt;
+loop：自动单曲循环
 
-all:文件将被检索，且页面上的链接可用被查询；
+preload:预加载
 
-none:文件将不被检索，且页面上的链接不可以被查询；
+source：格式
 
-index：文件将被检索；
+controls:显示控件
 
-noindex:文件将不被检索；
+src:要播放的URL
+</code></pre><h5 id="video标签样式"><a href="#video标签样式" class="headerlink" title="video标签样式"></a>video标签样式</h5><pre><code>定义视频标签，双标签，块级标签
+</code></pre><p>样式：</p>
+<pre><code>autoplay:自动播放
 
-follow：页面上的链接可以被查询；
+loop：自动单曲循环
 
-nofollow:页面上的链接不可以被查询。
-</code></pre><h4 id="页面重定向和刷新"><a href="#页面重定向和刷新" class="headerlink" title="页面重定向和刷新"></a>页面重定向和刷新</h4><pre><code>&lt;meta http-equiv=&quot;refresh&quot; content=&quot;0;url=&quot;/&gt;
+preload:预加载
 
-conter内的数字代表时间（秒），既多少时间后刷新，如果加url,则会重定向到指定网页（搜索引擎能够自动检测，也很容易被引擎视作误导而受到惩罚）
-</code></pre><h4 id="网页作者信息"><a href="#网页作者信息" class="headerlink" title="网页作者信息"></a>网页作者信息</h4><pre><code>&lt;meta name=&quot;author&quot; content=&quot;author name&quot;/&gt;
-</code></pre><h4 id="移动设备"><a href="#移动设备" class="headerlink" title="移动设备"></a>移动设备</h4><pre><code>&lt;meat name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot;/&gt;
-</code></pre><h4 id="WebApp全屏模式：伪装app-离线应用。"><a href="#WebApp全屏模式：伪装app-离线应用。" class="headerlink" title="WebApp全屏模式：伪装app,离线应用。"></a>WebApp全屏模式：伪装app,离线应用。</h4><pre><code>&lt;meata name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;/&gt;
-</code></pre><h4 id="隐藏状态栏-设置状态栏颜色：只有在开启WebApp全屏模式时才生效"><a href="#隐藏状态栏-设置状态栏颜色：只有在开启WebApp全屏模式时才生效" class="headerlink" title="隐藏状态栏/设置状态栏颜色：只有在开启WebApp全屏模式时才生效"></a>隐藏状态栏/设置状态栏颜色：只有在开启WebApp全屏模式时才生效</h4><pre><code>&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot;content=&quot;black-translucent&quot;/&gt;
+source：格式
 
-content的值为default|black|black-translucent
-</code></pre><h4 id="添加到主屏后的标题"><a href="#添加到主屏后的标题" class="headerlink" title="添加到主屏后的标题"></a>添加到主屏后的标题</h4><pre><code>&lt;meta name=&quot;apple-moblie-web-app-title&quot;content=&quot;标题&quot;&gt;
-content的值为default|black|black-translucent
-</code></pre><h4 id="忽略数字自动识别为电话号码"><a href="#忽略数字自动识别为电话号码" class="headerlink" title="忽略数字自动识别为电话号码"></a>忽略数字自动识别为电话号码</h4><pre><code>&lt;meta content=&quot;telephone=no&quot;name=&quot;format-detection&quot;/&gt;
-</code></pre><h4 id="忽略识别邮箱"><a href="#忽略识别邮箱" class="headerlink" title="忽略识别邮箱"></a>忽略识别邮箱</h4><pre><code>&lt;meat content=&quot;email=no&quot;name=&quot;format-detection&quot;/&gt;
-</code></pre>
+controls:显示控件
+
+src:要播放的URL
+</code></pre><ul>
+<li><p>label：for配合inputtext使用，定义登陆的盒子</p>
+<pre><code>&lt;fieldset&gt;
+    &lt;legend&gt;哈哈哈&lt;/legend&gt;
+    &lt;label for=&quot;zhanghao&quot;&gt;账号&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;zhanghao&quot;/&gt;
+&lt;/fieldset&gt;
+</code></pre></li>
+<li><p>datalist:选择器，配合text使用</p>
+<pre><code>&lt;input type=&quot;text&quot; list=&quot;haha&quot;&gt;
+&lt;datalist id=&quot;haha&quot;&gt;
+    &lt;option value=&quot;香蕉&quot;&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+</code></pre></li>
+<li><p>keygen:秘钥</p>
+</li>
+</ul>
+<p>*ins ：定义计算机程序的样本文本</p>
+<p>*samp ：定义计算机程序的样本文本</p>
+<p>*fieldset :legend</p>
+<pre><code>&lt;fieldset&gt;
+    &lt;legend&gt;哈哈哈&lt;/legend&gt;
+    &lt;label for=&quot;zhanghao&quot;&gt;账号&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;zhanghao&quot;/&gt;
+&lt;/fieldset&gt;
+</code></pre><h3 id="短语句"><a href="#短语句" class="headerlink" title="短语句"></a>短语句</h3><ul>
+<li>mark ：搜索文本高亮    ，文本标记</li>
+</ul>
+<ul>
+<li>progress ：进度条</li>
+</ul>
+<p>样式：value Max Min </p>
+<ul>
+<li>meter ：数量衡 </li>
+</ul>
+<p>样式：value Max Min high low min optimum</p>
+<ul>
+<li><p>time :定义时间和日期</p>
+</li>
+<li><p>ruby :rp rt</p>
+</li>
+<li><p>wbr :定义换行</p>
+</li>
+<li><p>abbr：定义缩写</p>
+</li>
+<li><p>bdi 定义隔离</p>
+</li>
+<li><p>cite 引入，斜体</p>
+</li>
+<li><p>blockquote :引入，有间距</p>
+</li>
+<li><p>q :引入，有引号，常用</p>
+</li>
+<li><p>output ：输出</p>
+</li>
+<li><p>code 格式化代码</p>
+</li>
+<li><p>pre :</p>
+</li>
+<li><p>object</p>
+</li>
+<li><p>param</p>
+</li>
+</ul>
+
     </div>
     <footer>
         
@@ -195,10 +285,8 @@ with(document)0[
 
  <nav id="pagination" >
     
-    <a href="/2016/06/27/html标签/" class="alignleft prev" title="html标签">html标签</a>
     
-    
-    <a href="/2016/06/23/自适应第一节-md/" class="alignright next" title="自适应第一节.md">自适应第一节.md</a>
+    <a href="/2016/06/24/响应式布局meta/" class="alignright next" title="响应式布局meta.md">响应式布局meta.md</a>
     
     <div class="clearfix"></div>
 </nav>
@@ -208,7 +296,7 @@ with(document)0[
 	
 	<section id="comment">
 		<!-- 多说评论框 start -->
-		<div class="ds-thread" data-thread-key="2016/06/24/响应式布局meta/" data-title="响应式布局meta.md" data-url="http://yoursite.com/2016/06/24/响应式布局meta/"></div>
+		<div class="ds-thread" data-thread-key="2016/06/27/html标签/" data-title="html标签" data-url="http://yoursite.com/2016/06/27/html标签/"></div>
 		<!-- 多说评论框 end -->
 		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 		<script type="text/javascript">
