@@ -15,24 +15,27 @@
 	})();
 	</script>
   
-  <title>css3选择器 | 诗-雨</title>
+  <title>css3背景 | 诗-雨</title>
   <meta name="author" content="杨桂生">
   
-  <meta name="description" content="css3选择器子元素选择器 vs 后代选择器E&amp;gt;F VS E F
-
-子元素选择器 选中的是子元素F 子孙不会被选
-.div1&amp;gt;div{
-        border:1px solid red;
-        color:red;
+  <meta name="description" content="CSS3背景圆角shadow：阴影box-shadow
+第一个参数x-offset偏移
+第二个参数y-offset偏移
+第三个参数 模糊度
+第四个参数 颜色
+第五个参数 inset 内阴影
+body{
+    margin:0;
 }
-
-后代选择器 是选择所有的F 包括子子孙孙
-.di">
+div{
+width:400px;
+height:500px;
+b">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="css3选择器"/>
+  <meta property="og:title" content="css3背景"/>
   <meta property="og:site_name" content="诗-雨"/>
 
   
@@ -90,172 +93,216 @@
   <div class="post-content">
     <header class="article-info clearfix">
   <h1 itemprop="name">
-	css3选择器
+	css3背景
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="杨桂生">杨桂生</a>
     </p>
   <p class="article-time">
-    <time datetime="2016-06-28T11:01:30.000Z" itemprop="datePublished">2016-06-28</time>
-    更新日期:<time datetime="2016-06-28T12:45:25.000Z" itemprop="dateModified">2016-06-28</time>
+    <time datetime="2016-06-29T10:51:07.000Z" itemprop="datePublished">2016-06-29</time>
+    更新日期:<time datetime="2016-06-29T11:40:04.000Z" itemprop="dateModified">2016-06-29</time>
     
   </p>
 </header>
     <div class="entry">
 		
-        <h1 id="css3选择器"><a href="#css3选择器" class="headerlink" title="css3选择器"></a>css3选择器</h1><h3 id="子元素选择器-vs-后代选择器"><a href="#子元素选择器-vs-后代选择器" class="headerlink" title="子元素选择器 vs 后代选择器"></a>子元素选择器 vs 后代选择器</h3><pre><code>E&gt;F VS E F
-</code></pre><ul>
-<li><p>子元素选择器 选中的是子元素F 子孙不会被选</p>
-<pre><code>.div1&gt;div{
-        border:1px solid red;
-        color:red;
+        <h1 id="CSS3背景"><a href="#CSS3背景" class="headerlink" title="CSS3背景"></a>CSS3背景</h1><h2 id="圆角"><a href="#圆角" class="headerlink" title="圆角"></a>圆角</h2><h4 id="shadow：阴影"><a href="#shadow：阴影" class="headerlink" title="shadow：阴影"></a>shadow：阴影</h4><h6 id="box-shadow"><a href="#box-shadow" class="headerlink" title="box-shadow"></a>box-shadow</h6><ul>
+<li>第一个参数x-offset偏移</li>
+<li>第二个参数y-offset偏移</li>
+<li>第三个参数 模糊度</li>
+<li>第四个参数 颜色</li>
+<li><p>第五个参数 inset 内阴影</p>
+<pre><code>body{
+    margin:0;
 }
-</code></pre></li>
-<li><p>后代选择器 是选择所有的F 包括子子孙孙</p>
-<pre><code>.div1 div{
-        border:1px solid red;
-        color:red;
-}
-</code></pre></li>
-</ul>
-<h3 id="相邻兄弟选择器-VS-通用兄弟选择器"><a href="#相邻兄弟选择器-VS-通用兄弟选择器" class="headerlink" title="相邻兄弟选择器 VS 通用兄弟选择器"></a>相邻兄弟选择器 VS 通用兄弟选择器</h3><pre><code>E + F VS E ~ F
-</code></pre><ul>
-<li>都要统一父级，是同级的</li>
-<li>相邻兄弟选择器的重点是在相邻，通用选择器不需要</li>
-<li>在上方的不能适用</li>
-<li><p>相邻兄弟选择器有且只有一个</p>
-<pre><code>h2+div{
-    border:1px solid green;
-}
-</code></pre></li>
-<li><p>通用兄弟选择器选择多个符合的</p>
-</li>
-</ul>
-<pre><code>h2~div{
-    border:1px solid green;
-}
-</code></pre><h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><pre><code>E[attr]
-E[attr=&quot;value&quot;]
-E[attr~=&quot;value&quot;] ~:表示几个以空格隔开的属性值中包含了“value”
-E[attr^=&quot;value&quot;] ^:以value开头的值
-E[attr$=&quot;value&quot;] $：以value结尾的值
-E[attr*=&quot;value&quot;] *： 包括了value的值
-E[attr|=&quot;value&quot;] |：以value或value-开头
-E[attr=&quot;value&quot;]和E[attr*=&quot;value&quot;]是最实用的
-</code></pre><hr>
+div{
+width:400px;
+height:500px;
+background-color: white;
+margin:50px auto 0;
+position: relative;
 
-<pre><code>*[class]{
-    border:1px solid pink;
+box-shadow: 2px 2px 10px #333;
 }
-*[class=&quot;div1&quot;]{
-    border:1px solid pink;
+div:before{
+content:&apos;&apos;;
+position: absolute;
+width:100px;
+height:100px;
+border-radius:50%;
+left:38%;
+box-shadow: 2px 2px 10px yellow;
+top:45%;
+
+margin-left: -1px;
+background-color: yellow;
 }
-*[class~=&quot;div1&quot;]{
-    border:1px solid pink;
-}
-*[class^=&quot;div1&quot;]{
-    border:1px solid pink;
-}
-*[class$=&quot;div1&quot;]{
-    border:1px solid pink;
-}
-*[class*=&quot;div1&quot;]{
-    border:1px solid pink;
-}
-*[class|=&quot;div1&quot;]{
-    border:1px solid pink;
-}
-</code></pre><h3 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h3><ul>
-<li>锚点伪类</li>
-<li><p>UI元素伪类 表单元素</p>
-<p>  :disabled :enabled :checked :focus</p>
-<p>  ex:input[type=”text”]:disabled{border:1px solid #999;background-color:#000;</p>
-<pre><code>聚焦
-input:focus{
-    border:1px solid red;
-}
-/*废弃状态触发，input元素必须要有disabled属性*/
-input:disabled{
+div:after{
+content:&apos;&apos;;
+position: absolute;
+width:500px;
+height:2px;
+top:50%;
+margin-top: -1px;
 
 }
-input:checked{
-    加边框
-}
-/*激活状态触发，input元素必须要有enabled属性*/
-input:enabled{
+div{
 
+border-radius:250px 250px 250px 250px / 70% 70% 60% 60%;
+}
+beizi{
+display: block;
+width:200px;
+height:300px;
+top:-100px;
+left:-20%;
+border-left:1px solid pink;
+border-right:1px solid pink;
+margin:0 auto;
+position: relative;
+background-color: pink;
+font-size: 66px;
+box-shadow: 2px 2px 10px #000;
+z-index: 10px;
+}
+beizi:before,beizi:after{
+content:&apos;&apos;;
+width:200px;
+height:100px;
+
+border-radius: 60% 60% 60% 60% / 60% 60% 60% 60%;
+margin:0 auto;
+position: absolute;
+
+}
+beizi:before{
+top:-50px;
+border:solid 1px pink;
+background-color: white;
+z-index: 11;
+box-shadow: 2px 0px 1px #000;
+}
+beizi:after{
+top:250px;
+background-color: pink;
+box-shadow: 0px 4px 1px #000;
+}
+beizi p{
+position: absolute;
+top:150px;
+left:35px;
+z-index: 10;
+color:white;
+text-shadow:1px 1px 3px blue;
+}
+milaoshu{
+display: block;
+width:100px;
+height:100px;
+background-color: red;
+border-radius: 50%;
+    position: absolute;
+top:100px;
+left:50px;
+}
+milaoshu:before,milaoshu:after{
+content:&apos;&apos;;
+width:50px;
+height:50px;
+background-color: red;
+border-radius: 50%;
+position: absolute;
+}
+milaoshu:before{
+top:-20px;
+left:-20px;
+}
+milaoshu:after{
+top:-20px;
+left:70px;
+}
+/*眼睛*/
+eyes{
+display: block;
+width:50px;
+height:30px;
+position: relative;
+left:70px;
+top:120px;
+
+}
+eyes:before{
+content: &apos;&apos;;
+width:20px;
+height:30px;
+position: absolute;
+background-color: white;
+border-radius: 50%;
+}
+eyes:after{
+content: &apos;&apos;;
+width:20px;
+height:30px;
+position: absolute;
+background-color: white;
+border-radius: 50%;
+left:40px;
+z-index: 100px;
 }
 </code></pre></li>
 </ul>
-<h3 id="：nth-选择器"><a href="#：nth-选择器" class="headerlink" title="：nth 选择器"></a>：nth 选择器</h3><ul>
-<li>：fist-child选择某个元素的第一个子元素</li>
-<li>：last-child选择某个元素的最后一个子元素</li>
-<li>：nth-last-child()选择某个元素的一个或多个特定的子元素，从这个元素的最后一个子元素开始算；</li>
-<li>：nth-of-type()选择指定的元素；</li>
-<li>：nth-last-of-type()选择指定的元素，从元素的最后一个开始计算；</li>
-<li>：first-of-type选择一个上级元素下地第一个同类子元素；</li>
-<li>：last-of-type选择一个上级元素的最后一个同类子元素；</li>
-<li>：only-child选择的元素是它父元素的唯一一个子元素；</li>
-<li>：only-of-type选择一个元素是它的上级元素的唯一一个相同类型的元素；</li>
-<li>：empty选择的元素里面没有任何内容。</li>
-<li>：nth-child()选择某个元素的一个或多个特定的子元素；</li>
-<li>：nth-child(length);参数是具体数字；</li>
-<li>：nth-child(n);参数是n,n从1开始计算</li>
-<li>：nth-child(2n);n的倍数选择，n从1开始算；</li>
-<li>：nth-child(n+length);选择大于length后面的元素；</li>
-<li>：nth-child(-n+length);选择小于length前面的元素；</li>
-<li>：nth-child(2n+1);表示隔几选一</li>
+<p><img src="阴影及圆角.png" alt="Smaller icon"></p>
+<h5 id="text-shadow：文字阴影"><a href="#text-shadow：文字阴影" class="headerlink" title="text-shadow：文字阴影"></a>text-shadow：文字阴影</h5><ul>
+<li>偏移量可以为负数</li>
+<li>无内阴影</li>
 </ul>
-<h3 id="否定选择器（：not）"><a href="#否定选择器（：not）" class="headerlink" title="否定选择器（：not）"></a>否定选择器（：not）</h3><pre><code>ex:input:not([type=&quot;submit&quot;]){border:1px solid red;}
-</code></pre><h3 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h3><ul>
-<li>：：first-letter 选择文本块的第一个字母，除非在同一行里面包含一些其他元素，不过这个主要运用于段落排版上</li>
-<li>：：first-line 选择元素的第一行</li>
-<li>：：before，：：after 这两个主要用来给元素的前面或后面插入内容，这两个常用“content”配合使用，见过最多的就是清除浮动还有图片icon</li>
-<li><p>：：selection用来改变浏览网页选中文本的默认效果，“：：selection”来改变在浏览器中选中文本后的背景色与前景色。：：selection在IE家族中，只有IE9+版本支持，在Firefox中需要加上其前缀“-moz”, :”::selection”只能设置两个属性，一个就是background,另一个就是color属性，设置其他属性是没有任何效果的。</p>
-<pre><code>/*伪元素*/
-body::before{
-    height:20vh;
-    content:&apos;12&apos;;
-    display: block;
-    background-color:pink;
-}
-/*只能写文本内容,子元素的最上方*/
-body::after{
-    content: &apos;个人看过节日快乐两个&apos;;
-    background-color: red;
-    display: block;
-    height:20vh;
-}
-/*子元素的最下方*/
-.div1{
-    height:60vh;
-    background-color: yellow;
-}
-.div1::first-letter{
-    background-color:red;
-}
-.div1::first-line{
-    color: green;
-}
-.div1::selection{
-    background-color:red;
-color:yellow;
-}
-/*改变选中文本的背景和颜色*/
-</code></pre><p><img src="伪元素.png" alt="Smaller icon"></p>
-</li>
-</ul>
-<h2 id="css3盒模型"><a href="#css3盒模型" class="headerlink" title="css3盒模型"></a>css3盒模型</h2><ul>
-<li><p>box-sizing</p>
-<pre><code>样式：content-box(默认值)，border-box(宽度包括边)，padding-box，outline:1px solid red;外轮廓
-</code></pre> <div style="border:5px #000 solid;box-sizing:border-box;padding-left:100px;">我是div1</div><br> <hr><br> <div style="outline:5px #000 solid;box-sizing:border-box;padding-left:100px;border:5px #000 solid;">我是div2</div>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><h4 id="多个图片背景的插入"><a href="#多个图片背景的插入" class="headerlink" title="多个图片背景的插入"></a>多个图片背景的插入</h4><pre><code>width:600px;
+height:400px;
+margin:0 auto;
+padding:50px;
+background-image: url(&quot;http://img4.duitang.com/uploads/item/201307/06/20130706225918_Z3STi.gif&quot;), url(&quot;https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&amp;quality=100&amp;size=b4000_4000&amp;sec=1467186835&amp;di=af68535106cf9a94ee1421e2038dcd04&amp;src=http://img.nntv.cn/images/2014-4-17/20144171397703214011_171.jpg&quot;);
+background-repeat: no-repeat,no-repeat;
+background-position:0px 0px ,100px 100px ;
+background-clip:content-box;
+</code></pre><p><img src="多图背景.PNG" alt="Smaller icon"></p>
+<h4 id="相关元素"><a href="#相关元素" class="headerlink" title="相关元素"></a>相关元素</h4><ul>
+<li>cover：自适应铺满，可能会部分图片超出看不见；</li>
+<li>contain:自适应铺满，宽或者高铺满就会停止；</li>
+<li>background:origin-box,padding-box,border-box；出现方式</li>
+<li>background:clip:content-box,padding-box,border-box;裁剪</li>
+<li><p>content-box有效果，以内容范围裁剪，配合padding；</p>
+<pre><code>width:600px;
+height:400px;
+margin:0 auto;
+padding:50px;
+background-image: url(&quot;http://img4.duitang.com/uploads/item/201307/06/20130706225918_Z3STi.gif&quot;), url(&quot;https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&amp;quality=100&amp;size=b4000_4000&amp;sec=1467186835&amp;di=af68535106cf9a94ee1421e2038dcd04&amp;src=http://img.nntv.cn/images/2014-4-17/20144171397703214011_171.jpg&quot;);
+background-repeat: no-repeat,no-repeat;
+background-position:0px 0px ,100px 100px ;
+    /*background-clip:content-box;*/
+background-origin:border-box;
 
-<pre><code>&lt;div style=&quot;border:5px #000 solid;box-sizing:border-box;padding-left:100px;&quot;&gt;我是div1&lt;/div&gt;
-&lt;hr/&gt;
-&lt;div style=&quot;outline:5px #000 solid;box-sizing:border-box;padding-left:100px;border:5px #000 solid;&quot;&gt;我是div2&lt;/div&gt;
+background-size:contain;
+border:20px solid red;
 </code></pre></li>
 </ul>
+<h5 id="linear-gradient-渐变色"><a href="#linear-gradient-渐变色" class="headerlink" title="linear-gradient:渐变色"></a>linear-gradient:渐变色</h5><pre><code>width:900px;
+box-sizing: border-box;
+padding:100px;
+height:600px;
+background-image:linear-gradient(to right top ,red,blue,white ,gold ,pink ,cyan,purple,orange);
+</code></pre><p><img src="渐变色.png" alt="Smaller icon"></p>
+<ul>
+<li>repeating重复</li>
+</ul>
+<h5 id="radial-gradient：径向渐变"><a href="#radial-gradient：径向渐变" class="headerlink" title="radial-gradient：径向渐变"></a>radial-gradient：径向渐变</h5><pre><code>width:500px;
+box-sizing: border-box;
+height:500px;
+margin:0 auto;
+background-color: green;
+background-image:radial-gradient(tan, red ,blue );
+background-size: 100px 100px;
+</code></pre><p><img src="径向渐变.png" alt="Smaller icon"></p>
 
     </div>
     <footer>
@@ -306,10 +353,8 @@ with(document)0[
 
  <nav id="pagination" >
     
-    <a href="/2016/06/29/css3背景/" class="alignleft prev" title="css3背景">css3背景</a>
     
-    
-    <a href="/2016/06/27/html标签/" class="alignright next" title="html标签">html标签</a>
+    <a href="/2016/06/28/css3选择器/" class="alignright next" title="css3选择器">css3选择器</a>
     
     <div class="clearfix"></div>
 </nav>
@@ -319,7 +364,7 @@ with(document)0[
 	
 	<section id="comment">
 		<!-- 多说评论框 start -->
-		<div class="ds-thread" data-thread-key="2016/06/28/css3选择器/" data-title="css3选择器" data-url="http://yoursite.com/2016/06/28/css3选择器/"></div>
+		<div class="ds-thread" data-thread-key="2016/06/29/css3背景/" data-title="css3背景" data-url="http://yoursite.com/2016/06/29/css3背景/"></div>
 		<!-- 多说评论框 end -->
 		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 		<script type="text/javascript">
