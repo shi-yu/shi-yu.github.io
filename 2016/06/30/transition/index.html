@@ -15,27 +15,21 @@
 	})();
 	</script>
   
-  <title>css3背景 | 诗-雨</title>
+  <title>transition | 诗-雨</title>
   <meta name="author" content="杨桂生">
   
-  <meta name="description" content="CSS3背景圆角shadow：阴影box-shadow
-第一个参数x-offset偏移
-第二个参数y-offset偏移
-第三个参数 模糊度
-第四个参数 颜色
-第五个参数 inset 内阴影
-body{
-    margin:0;
-}
-div{
-width:400px;
-height:500px;
-b">
+  <meta name="description" content="transition
+transition-property:执行过渡变换的属性
+transition-durayion:过渡变换延续的时间
+transition-timing-function:过渡变换的速率效果方式
+transition-delay:换延迟时间
+
+trandform2D变形tra">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="css3背景"/>
+  <meta property="og:title" content="transition"/>
   <meta property="og:site_name" content="诗-雨"/>
 
   
@@ -93,216 +87,116 @@ b">
   <div class="post-content">
     <header class="article-info clearfix">
   <h1 itemprop="name">
-	css3背景
+	transition
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="杨桂生">杨桂生</a>
     </p>
   <p class="article-time">
-    <time datetime="2016-06-29T10:51:07.000Z" itemprop="datePublished">2016-06-29</time>
-    更新日期:<time datetime="2016-06-29T11:40:04.000Z" itemprop="dateModified">2016-06-29</time>
+    <time datetime="2016-06-30T11:20:49.000Z" itemprop="datePublished">2016-06-30</time>
+    更新日期:<time datetime="2016-06-30T12:51:41.000Z" itemprop="dateModified">2016-06-30</time>
     
   </p>
 </header>
     <div class="entry">
 		
-        <h1 id="CSS3背景"><a href="#CSS3背景" class="headerlink" title="CSS3背景"></a>CSS3背景</h1><h2 id="圆角"><a href="#圆角" class="headerlink" title="圆角"></a>圆角</h2><h4 id="shadow：阴影"><a href="#shadow：阴影" class="headerlink" title="shadow：阴影"></a>shadow：阴影</h4><h6 id="box-shadow"><a href="#box-shadow" class="headerlink" title="box-shadow"></a>box-shadow</h6><ul>
-<li>第一个参数x-offset偏移</li>
-<li>第二个参数y-offset偏移</li>
-<li>第三个参数 模糊度</li>
-<li>第四个参数 颜色</li>
-<li><p>第五个参数 inset 内阴影</p>
-<pre><code>body{
-    margin:0;
-}
-div{
-width:400px;
-height:500px;
-background-color: white;
-margin:50px auto 0;
-position: relative;
-
-box-shadow: 2px 2px 10px #333;
-}
-div:before{
-content:&apos;&apos;;
-position: absolute;
-width:100px;
-height:100px;
-border-radius:50%;
-left:38%;
-box-shadow: 2px 2px 10px yellow;
-top:45%;
-
-margin-left: -1px;
-background-color: yellow;
-}
-div:after{
-content:&apos;&apos;;
-position: absolute;
-width:500px;
-height:2px;
-top:50%;
-margin-top: -1px;
-
-}
-div{
-
-border-radius:250px 250px 250px 250px / 70% 70% 60% 60%;
-}
-beizi{
-display: block;
-width:200px;
-height:300px;
-top:-100px;
-left:-20%;
-border-left:1px solid pink;
-border-right:1px solid pink;
-margin:0 auto;
-position: relative;
-background-color: pink;
-font-size: 66px;
-box-shadow: 2px 2px 10px #000;
-z-index: 10px;
-}
-beizi:before,beizi:after{
-content:&apos;&apos;;
-width:200px;
-height:100px;
-
-border-radius: 60% 60% 60% 60% / 60% 60% 60% 60%;
-margin:0 auto;
-position: absolute;
-
-}
-beizi:before{
-top:-50px;
-border:solid 1px pink;
-background-color: white;
-z-index: 11;
-box-shadow: 2px 0px 1px #000;
-}
-beizi:after{
-top:250px;
-background-color: pink;
-box-shadow: 0px 4px 1px #000;
-}
-beizi p{
-position: absolute;
-top:150px;
-left:35px;
-z-index: 10;
-color:white;
-text-shadow:1px 1px 3px blue;
-}
-milaoshu{
-display: block;
-width:100px;
-height:100px;
-background-color: red;
-border-radius: 50%;
-    position: absolute;
-top:100px;
-left:50px;
-}
-milaoshu:before,milaoshu:after{
-content:&apos;&apos;;
-width:50px;
-height:50px;
-background-color: red;
-border-radius: 50%;
-position: absolute;
-}
-milaoshu:before{
-top:-20px;
-left:-20px;
-}
-milaoshu:after{
-top:-20px;
-left:70px;
-}
-/*眼睛*/
-eyes{
-display: block;
-width:50px;
-height:30px;
-position: relative;
-left:70px;
-top:120px;
-
-}
-eyes:before{
-content: &apos;&apos;;
-width:20px;
-height:30px;
-position: absolute;
-background-color: white;
-border-radius: 50%;
-}
-eyes:after{
-content: &apos;&apos;;
-width:20px;
-height:30px;
-position: absolute;
-background-color: white;
-border-radius: 50%;
-left:40px;
-z-index: 100px;
-}
-</code></pre></li>
+        <h1 id="transition"><a href="#transition" class="headerlink" title="transition"></a>transition</h1><ul>
+<li>transition-property:执行过渡变换的属性</li>
+<li>transition-durayion:过渡变换延续的时间</li>
+<li>transition-timing-function:过渡变换的速率效果方式</li>
+<li>transition-delay:换延迟时间</li>
 </ul>
-<p><img src="阴影及圆角.png" alt="Smaller icon"></p>
-<h5 id="text-shadow：文字阴影"><a href="#text-shadow：文字阴影" class="headerlink" title="text-shadow：文字阴影"></a>text-shadow：文字阴影</h5><ul>
-<li>偏移量可以为负数</li>
-<li>无内阴影</li>
-</ul>
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><h4 id="多个图片背景的插入"><a href="#多个图片背景的插入" class="headerlink" title="多个图片背景的插入"></a>多个图片背景的插入</h4><pre><code>width:600px;
-height:400px;
-margin:0 auto;
-padding:50px;
-background-image: url(&quot;http://img4.duitang.com/uploads/item/201307/06/20130706225918_Z3STi.gif&quot;), url(&quot;https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&amp;quality=100&amp;size=b4000_4000&amp;sec=1467186835&amp;di=af68535106cf9a94ee1421e2038dcd04&amp;src=http://img.nntv.cn/images/2014-4-17/20144171397703214011_171.jpg&quot;);
-background-repeat: no-repeat,no-repeat;
-background-position:0px 0px ,100px 100px ;
-background-clip:content-box;
-</code></pre><p><img src="多图背景.PNG" alt="Smaller icon"></p>
-<h4 id="相关元素"><a href="#相关元素" class="headerlink" title="相关元素"></a>相关元素</h4><ul>
-<li>cover：自适应铺满，可能会部分图片超出看不见；</li>
-<li>contain:自适应铺满，宽或者高铺满就会停止；</li>
-<li>background:origin-box,padding-box,border-box；出现方式</li>
-<li>background:clip:content-box,padding-box,border-box;裁剪</li>
-<li><p>content-box有效果，以内容范围裁剪，配合padding；</p>
-<pre><code>width:600px;
-height:400px;
-margin:0 auto;
-padding:50px;
-background-image: url(&quot;http://img4.duitang.com/uploads/item/201307/06/20130706225918_Z3STi.gif&quot;), url(&quot;https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&amp;quality=100&amp;size=b4000_4000&amp;sec=1467186835&amp;di=af68535106cf9a94ee1421e2038dcd04&amp;src=http://img.nntv.cn/images/2014-4-17/20144171397703214011_171.jpg&quot;);
-background-repeat: no-repeat,no-repeat;
-background-position:0px 0px ,100px 100px ;
-    /*background-clip:content-box;*/
-background-origin:border-box;
+<h3 id="trandform2D变形"><a href="#trandform2D变形" class="headerlink" title="trandform2D变形"></a>trandform2D变形</h3><pre><code>transform:rotate|scale|skew|translate|matrix;
 
-background-size:contain;
-border:20px solid red;
-</code></pre></li>
+旋转rotate、扭曲skew、缩放scale和移动translate以及矩阵变形matrix
+</code></pre><h5 id="旋转rotate"><a href="#旋转rotate" class="headerlink" title="旋转rotate"></a>旋转rotate</h5><ul>
+<li>通过指定的角度参数对原元素指定一定2Drotation(2D旋转)</li>
+<li>deg-可为负数</li>
 </ul>
-<h5 id="linear-gradient-渐变色"><a href="#linear-gradient-渐变色" class="headerlink" title="linear-gradient:渐变色"></a>linear-gradient:渐变色</h5><pre><code>width:900px;
-box-sizing: border-box;
-padding:100px;
-height:600px;
-background-image:linear-gradient(to right top ,red,blue,white ,gold ,pink ,cyan,purple,orange);
-</code></pre><p><img src="渐变色.png" alt="Smaller icon"></p>
-<ul>
-<li>repeating重复</li>
+<h5 id="移动translate"><a href="#移动translate" class="headerlink" title="移动translate"></a>移动translate</h5><ul>
+<li>translate(x,y)水平方向和垂直方向同时移动</li>
+<li>translateX(x)仅水平方向移动</li>
+<li>translateY(y)仅垂直方向移动</li>
+<li>可以负数</li>
 </ul>
-<h5 id="radial-gradient：径向渐变"><a href="#radial-gradient：径向渐变" class="headerlink" title="radial-gradient：径向渐变"></a>radial-gradient：径向渐变</h5><pre><code>width:500px;
-box-sizing: border-box;
-height:500px;
-margin:0 auto;
-background-color: green;
-background-image:radial-gradient(tan, red ,blue );
-background-size: 100px 100px;
-</code></pre><p><img src="径向渐变.png" alt="Smaller icon"></p>
+<h5 id="缩放scale"><a href="#缩放scale" class="headerlink" title="缩放scale"></a>缩放scale</h5><ul>
+<li>scale(x,y)使元素水平方向和垂直方向同时缩放</li>
+<li>scaleX(x)元素仅水平方向缩放</li>
+<li>scaleY(y)元素仅垂直方向缩放</li>
+<li>整数 小数</li>
+</ul>
+<h5 id="扭曲skew"><a href="#扭曲skew" class="headerlink" title="扭曲skew"></a>扭曲skew</h5><ul>
+<li>skew(x,y)使元素在水平和垂直方向同时扭曲变形</li>
+<li>skewX(x)仅使元素在水平方向扭曲变形</li>
+<li>skewY(y)仅使元素在垂直方向扭曲变形</li>
+<li>角度deg</li>
+</ul>
+<h5 id="transform-origin"><a href="#transform-origin" class="headerlink" title="transform-origin"></a>transform-origin</h5><ul>
+<li>元素的基点位置</li>
+<li>认基点就是元素中心位置</li>
+<li>transform-origin(X,Y)</li>
+<li>其中X和Y的值可以是百分比，em,px,方向</li>
+</ul>
+<h5 id="matrix矩阵"><a href="#matrix矩阵" class="headerlink" title="matrix矩阵"></a>matrix矩阵</h5><ul>
+<li>挠头。。。</li>
+<li>transform:matrix(1,1,-1,0,0,0);</li>
+</ul>
+<h5 id="transform-3d"><a href="#transform-3d" class="headerlink" title="transform-3d"></a>transform-3d</h5><ul>
+<li>旋转rotate</li>
+<li>rotateX:元素围绕其X轴以给定的度数进行旋转</li>
+<li>rotateY:元素围绕其Y轴以给定的度数进行旋转</li>
+<li>rotateZ:元素围绕其Z以给定的度数进行旋转</li>
+<li>transform-style:嵌套元素如何在3d空间中呈现</li>
+<li>transform-style:flat|preserve-3d</li>
+<li>flat默认，所有子元素在2D平面呈现<h5 id="preserve-3d-所有子元素在3D平面呈现，设置这个属性之后，就不能使用overflow-hidden"><a href="#preserve-3d-所有子元素在3D平面呈现，设置这个属性之后，就不能使用overflow-hidden" class="headerlink" title="preserve-3d,所有子元素在3D平面呈现，设置这个属性之后，就不能使用overflow:hidden"></a>preserve-3d,所有子元素在3D平面呈现，设置这个属性之后，就不能使用overflow:hidden</h5></li>
+<li>当作舞台：多个变形元素的父节点</li>
+<li>变形元素自身</li>
+<li>两种书写方式<h5 id="perspective-视距，视角-设置查看者的位置"><a href="#perspective-视距，视角-设置查看者的位置" class="headerlink" title="perspective:视距，视角 设置查看者的位置"></a>perspective:视距，视角 设置查看者的位置</h5></li>
+<li>ex:perspective:600px;</li>
+<li>ex: transform:perspective(600px)rotateY(45deg);</li>
+<li>perspctive-origin:x y;</li>
+<li>px 百分比</li>
+<li>舞台</li>
+<li>perspective:800px;</li>
+<li>容器</li>
+<li>transform-style:preserve-3d</li>
+<li>translateZ</li>
+<li>backface-visibility</li>
+<li>元素旋转背面是否可见</li>
+<li>backface-visibility:visbble|hidden</li>
+</ul>
+<h2 id="Animation"><a href="#Animation" class="headerlink" title="Animation"></a>Animation</h2><ul>
+<li>animation-name:动画属性名</li>
+<li>@keyframes动画关键帧</li>
+<li>form to</li>
+<li>百分比</li>
+</ul>
+<h5 id="animation-duration-动画持续时间"><a href="#animation-duration-动画持续时间" class="headerlink" title="animation-duration:动画持续时间"></a>animation-duration:动画持续时间</h5><ul>
+<li>单位S秒</li>
+</ul>
+<h5 id="animation-timing-function：动画效果"><a href="#animation-timing-function：动画效果" class="headerlink" title="animation-timing-function：动画效果"></a>animation-timing-function：动画效果</h5><ul>
+<li>ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier</li>
+</ul>
+<h5 id="animation-iteration-count"><a href="#animation-iteration-count" class="headerlink" title="animation-iteration-count"></a>animation-iteration-count</h5><ul>
+<li>指定元素播放动画的循环次数</li>
+<li>infinite无限</li>
+<li>数字 代表几次<h5 id="animation-delay"><a href="#animation-delay" class="headerlink" title="animation-delay"></a>animation-delay</h5></li>
+<li>指定元素动画开始时间</li>
+<li>单位S秒</li>
+</ul>
+<h5 id="animation-direction"><a href="#animation-direction" class="headerlink" title="animation-direction"></a>animation-direction</h5><ul>
+<li>指定元素动画播放的方向</li>
+<li>默认值为normal,动画的每次循环都是向前播放</li>
+<li>alternate,动画播放在第奇数次向前播放，第偶数次向反方向播放</li>
+</ul>
+<h5 id="animation-fill-mode"><a href="#animation-fill-mode" class="headerlink" title="animation-fill-mode"></a>animation-fill-mode</h5><ul>
+<li>forwards:当动画完成后，保持最后一个属性值（在最后一个关键帧重定义）。</li>
+<li>backwards:在animation-delay 所指定的一段时间内，在动画显示之前，应用开始属性值（在第一个关键帧中定义）</li>
+<li>none:不改变默认行为</li>
+<li>both:向前和向后填充模式都被应用。</li>
+</ul>
+<h5 id="简写模式"><a href="#简写模式" class="headerlink" title="简写模式"></a>简写模式</h5><p>animation:haha 5s infinite linear 1s;</p>
 
     </div>
     <footer>
@@ -353,10 +247,8 @@ with(document)0[
 
  <nav id="pagination" >
     
-    <a href="/2016/06/30/transition/" class="alignleft prev" title="transition">transition</a>
     
-    
-    <a href="/2016/06/28/css3选择器/" class="alignright next" title="css3选择器">css3选择器</a>
+    <a href="/2016/06/29/css3背景/" class="alignright next" title="css3背景">css3背景</a>
     
     <div class="clearfix"></div>
 </nav>
@@ -366,7 +258,7 @@ with(document)0[
 	
 	<section id="comment">
 		<!-- 多说评论框 start -->
-		<div class="ds-thread" data-thread-key="2016/06/29/css3背景/" data-title="css3背景" data-url="http://yoursite.com/2016/06/29/css3背景/"></div>
+		<div class="ds-thread" data-thread-key="2016/06/30/transition/" data-title="transition" data-url="http://yoursite.com/2016/06/30/transition/"></div>
 		<!-- 多说评论框 end -->
 		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 		<script type="text/javascript">
